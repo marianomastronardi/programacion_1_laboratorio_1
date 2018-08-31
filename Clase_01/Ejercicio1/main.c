@@ -3,7 +3,7 @@
 //VARIABLES. ACUMULADORES. CONTADORES.
 int main()
 {
-    //1.	Ingresar 5 números y calcular su media
+    //1.	Ingresar 5 nï¿½meros y calcular su media
     int numero1;
     int numero2;
     int numero3;
@@ -11,6 +11,7 @@ int main()
     int numero5;
     float promedio;
 
+    //Comentario de prueba
     printf("Ingrese el numero 1: ");
     scanf("%d", &numero1);
 
