@@ -25,3 +25,29 @@
 	"calculadora.h"
 	"Validador.h"
 
+1535830243 source:d:\utn fra\1º año\1º cuatrimestre\programacion_1_laboratorio_1-master\tps\tp1\calculadora.c
+	"calculadora.h"
+
+1535830243 d:\utn fra\1º año\1º cuatrimestre\programacion_1_laboratorio_1-master\tps\tp1\calculadora.h
+	<stdio.h>
+
+1535937652 source:d:\utn fra\1º año\1º cuatrimestre\programacion_1_laboratorio_1-master\tps\tp1\validador.c
+	"Validador.h"
+	<string.h>
+	<stdio.h>
+	<conio.h>
+	<ctype.h>
+
+1535830243 d:\utn fra\1º año\1º cuatrimestre\programacion_1_laboratorio_1-master\tps\tp1\validador.h
+	<string.h>
+	<string.h>
+	<stdio.h>
+	<conio.h>
+	<ctype.h>
+
+1535937676 source:d:\utn fra\1º año\1º cuatrimestre\programacion_1_laboratorio_1-master\tps\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"calculadora.h"
+	"Validador.h"
+
