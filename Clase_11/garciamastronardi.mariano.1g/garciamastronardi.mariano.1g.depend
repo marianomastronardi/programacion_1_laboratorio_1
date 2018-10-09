@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1539046277 source:d:\garciamastronardi.mariano.1g\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1539046266 d:\garciamastronardi.mariano.1g\funciones.h
+
+1539046347 source:d:\garciamastronardi.mariano.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
