@@ -44,7 +44,9 @@ int modificarCliente(eCliente vCliente[], int tam);
 void listarClientes(eCliente vClientes[], int tam);
 void inicializarClientes(eCliente vCliente[], int tam);
 void ordenarClientes(eCliente vCliente[], int tam);
-void altaAlquiler(eAlquileres vAlquiler[], int tam);
+void altaAlquiler(eAlquileres vAlquiler[], int tam, eJuego vJuego[], int tamj,eCliente vCliente[], int tamc);
 void listarAlquileres(eAlquileres vAlquiler[], int tam);
 void inicializarAlquileres(eAlquileres vAlquiler[], int tam);
+void existeJuego(eJuego vJuego[], int tam, int cod);
+
 #endif  FUNCIONES_H_INCLUDED

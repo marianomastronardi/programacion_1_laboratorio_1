@@ -39,7 +39,7 @@ int main()
             listarClientes(vCliente, TAM);
             break;
         case 5:
-            altaAlquiler(vAlquiler, TAM);
+            altaAlquiler(vAlquiler, TAM, vJuego, TAM, vCliente, TAM);
             break;
         case 6:
             listarAlquileres(vAlquiler, TAM);

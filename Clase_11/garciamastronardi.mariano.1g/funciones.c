@@ -291,17 +291,28 @@ void ordenarClientes(eCliente vCliente[], int tam)
     }
 }
 
-void altaAlquiler(eAlquileres vAlquiler[], int tam)
+void altaAlquiler(eAlquileres vAlquiler[], int tam, eJuego vJuego[], int tamj, eCliente vCliente[], int tamc)
 {
     int codigoalquiler;
     int codigojuego;
     int codigocliente;
     eAlquileres unAlquiler;
+    int existe;
+    do{
     printf("Ingrese el codigo del juego\n");
     scanf("%d", &unAlquiler.CodigoJuego);
+    int cod = unAlquiler.CodigoJuego;
+    //existe = existeJuego(vJuego, tamj, cod);
+    }while(existe == ERR);
 
+
+    do{
     printf("Ingrese el codigo del cliente\n");
     scanf("%d", &unAlquiler.CodigoCliente);
+    int icli = unAlquiler.CodigoCliente;
+    existe = existeCliente(vCliente, tamc, icli);
+    }while(existe == ERR);
+
 
     printf("Ingrese un dia\n");
     scanf("%d", &unAlquiler.fecha.dia);
@@ -350,5 +361,20 @@ void inicializarAlquileres(eAlquileres vAlquiler[], int tam)
         vAlquiler[i].CodigoJuego = 0;
         vAlquiler[i].fecha = dFecha;
     }
+}
+
+void existeJuego(eJuego vJuego[], int tam, int cod)
+{
+    int ret = ERR;
+
+    for(int i = 0; i < tam; i++)
+    {
+        if(vJuego[i].Codigo == cod)
+        {
+            ret = rOK;
+        }
+    }
+
+    return ret;
 }
 
