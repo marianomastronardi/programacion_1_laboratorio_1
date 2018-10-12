@@ -3,21 +3,21 @@
 #include "funciones.h"
 
 #define TAM 5
-
-void cargarJuegos(eJuego vJuego[], int tam);
-void cargarCategorias(eCategoria vCategoria[], int tam);
+#define rOK 0
+#define ERR 1
 
 int main()
 {
     int opc;
     char resp = 's';
+    int ret;
     eJuego vJuego[TAM];
     eCategoria vCategoria[TAM];
     eCliente vCliente[TAM];
     eAlquileres vAlquiler[TAM];
 
-    cargarJuegos(vJuego, TAM);
     cargarCategorias(vCategoria, TAM);
+    cargarJuegos(vJuego, TAM, vCategoria, TAM);
     inicializarClientes(vCliente, TAM);
     inicializarAlquileres(vAlquiler, TAM);
     do
@@ -27,60 +27,93 @@ int main()
         switch(opc)
         {
         case 1:
-            altaCliente(vCliente, TAM);
+            ret = altaCliente(vCliente, TAM);
+
+            if(ret == ERR)
+            {
+                printf("\nNo hay espacio para dar de alta clientes\n");
+            }
             break;
         case 2:
-            bajaCliente(vCliente, TAM);
+            ret = hayClientes(vCliente, TAM);
+            if(ret == rOK)
+            {
+
+                ret = bajaCliente(vCliente, TAM);
+                if(ret == ERR)
+                {
+                    printf("\nNo existe el cliente ingresado\n");
+                }
+
+            }
+            else
+            {
+                printf("\n No hay clientes para dar de baja\n");
+            }
             break;
         case 3:
-            modificarCliente(vCliente, TAM);
+            ret = hayClientes(vCliente, TAM);
+            if(ret == rOK)
+            {
+                ret = modificarCliente(vCliente, TAM);
+                if(ret == ERR)
+                {
+                    printf("\nNo existe el cliente ingresado\n");
+                }
+            }
+            else
+            {
+                printf("\nNo hay clientes para modificar\n");
+            }
             break;
         case 4:
-            listarClientes(vCliente, TAM);
+            ret = hayClientes(vCliente, TAM);
+            if(ret == rOK)
+            {
+                listarClientes(vCliente, TAM);
+            }
+            else
+            {
+                printf("\nNo hay Clientes para listar\n");
+            }
             break;
         case 5:
-            altaAlquiler(vAlquiler, TAM, vJuego, TAM, vCliente, TAM);
+            ret = altaAlquiler(vAlquiler, TAM, vJuego, TAM, vCliente, TAM);
+            if(ret == ERR)
+            {
+                printf("\nNo hay clientes dados de alta.\n");
+            }
             break;
         case 6:
-            listarAlquileres(vAlquiler, TAM);
+            ret = hayAlquileres(vAlquiler, TAM);
+            if(ret == rOK)
+            {
+                listarAlquileres(vAlquiler, TAM, vCliente, TAM, vJuego, TAM, vCategoria, TAM);
+            }
+            else
+            {
+                printf("\nNo hay alquileres para listar\n");
+            }
+            break;
+        case 7:
+            exit(0);
             break;
         default:
             break;
         }
 
-        fflush(stdin);
-        printf("Desea continuar? [s/n]\n");
-        scanf("%c", &resp);
+        do
+        {
+            fflush(stdin);
+            printf("\nDesea continuar? [s/n]\n");
+            scanf("%c", &resp);
+        }
+        while(resp != 's' && resp != 'n');
     }
     while(resp == 's');
     return 0;
 }
 
-void cargarJuegos(eJuego vJuego[], int tam)
-{
-    eJuego sJuego[] =
-    {
-        {1, "Estanciero", 210.56, 101},
-        {2, "Generala", 311.77, 102},
-        {3, "TEG", 215.97, 103},
-        {4, "Mi salon", 877.12, 104},
-        {5, "Mi magia", 500.01, 105}
-    };
 
-    for(int i = 0; i < tam; i++)
-    {
-        vJuego[i] = sJuego[i];
-    }
-}
 
-void cargarCategorias(eCategoria vCategoria[], int tam)
-{
-    eCategoria sCategoria[] =
-    {
-        {101, "mesa"},
-        {102, "azar"},
-        {103, "estrategia"},
-        {104, "salon"},
-        {105, "magia"}
-    };
-}
+

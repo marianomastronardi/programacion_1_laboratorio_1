@@ -13,3 +13,17 @@
 	<stdlib.h>
 	"funciones.h"
 
+1539308322 source:c:\users\mgmastronardi\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1539310143 c:\users\mgmastronardi\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\funciones.h
+
+1539310143 source:c:\users\mgmastronardi\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
