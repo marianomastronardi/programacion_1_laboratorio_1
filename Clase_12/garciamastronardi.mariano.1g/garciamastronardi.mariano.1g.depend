@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1539047472 source:d:\garciamastronardi.mariano.1g\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1539047377 d:\garciamastronardi.mariano.1g\funciones.h
+
+1539047522 source:d:\garciamastronardi.mariano.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1539308322 source:c:\users\mgmastronardi\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1539310143 c:\users\mgmastronardi\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\funciones.h
+
+1539310143 source:c:\users\mgmastronardi\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1539391975 source:c:\users\alumno\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1539391998 c:\users\alumno\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\funciones.h
+
+1539392018 source:c:\users\alumno\downloads\programacion_1_laboratorio_1-master\clase_11\garciamastronardi.mariano.1g\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
