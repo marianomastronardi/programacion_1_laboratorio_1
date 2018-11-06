@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1541477469 source:c:\users\mgmastronardi\downloads\juegocategoria\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
